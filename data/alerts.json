@@ -1,0 +1,40 @@
+[
+    {
+      "c": "NETWORK",
+      "msg": "Listening on",
+      "attr": { "address": "127.0.0.1" }
+    },
+    {
+      "c": "COMMAND",
+      "msg": "Slow query",
+      "attr": {
+        "durationMillis": 542,
+        "command": { "find": "users", "filter": { "email": "user@example.com" } }
+      }
+    },
+    {
+      "c": "REPL",
+      "msg": "Heartbeat to primary failed",
+      "attr": {
+        "target": "mongo-primary:27017",
+        "error": "HostUnreachable"
+      }
+    },
+    {
+      "c": "STORAGE",
+      "msg": "WiredTiger error",
+      "attr": {
+        "error": -31804,
+        "message": "WT_ROLLBACK: conflict with a concurrent transaction"
+      }
+    },
+    {
+      "c": "ACCESS",
+      "msg": "Authentication failed",
+      "attr": {
+        "user": "admin",
+        "db": "admin",
+        "client": "192.168.1.50"
+      }
+    }
+  ]
